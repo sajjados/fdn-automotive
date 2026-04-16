@@ -44,8 +44,8 @@ export default function Home() {
               >
                 <div className="flex items-center gap-4 mb-8">
                   <div className="w-12 h-px bg-brand-red" />
-                  <span className="text-brand-red font-black uppercase tracking-[0.5em] text-[10px]">
-                    Seçkin Otomotiv Küratörü
+                  <span className="text-brand-red font-black uppercase tracking-[0.5em] text-[10px] leading-relaxed">
+                    Seçkin Otomotiv <br className="sm:hidden" /> Küratörü
                   </span>
                 </div>
                 <h1 className="text-[14vw] sm:text-[12vw] lg:text-[10vw] font-black tracking-tighter leading-[0.9] sm:leading-[0.8] mb-12 uppercase italic">
@@ -56,12 +56,12 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8 mb-16">
                   <Link
                     to="/gallery"
-                    className="group relative overflow-hidden border border-brand-red text-white px-8 py-4 font-black uppercase tracking-[0.3em] text-[9px] transition-all duration-500 w-full sm:w-auto text-center"
+                    className="group relative overflow-hidden border border-brand-red/50 hover:border-brand-red text-white px-10 py-5 font-black uppercase tracking-[0.4em] text-[10px] transition-all duration-700 w-full sm:w-auto text-center bg-brand-red/5 hover:bg-brand-red/10"
                   >
-                    <span className="relative z-10 flex items-center justify-center gap-3 group-hover:text-brand-black transition-colors duration-500">
-                      Koleksiyonu Keşfet <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform duration-500" />
+                    <span className="relative z-10 flex items-center justify-center gap-4 group-hover:text-brand-black transition-colors duration-700">
+                      Koleksiyonu Keşfet <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform duration-700" />
                     </span>
-                    <div className="absolute inset-0 bg-brand-red translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
+                    <div className="absolute inset-0 bg-brand-red translate-y-full group-hover:translate-y-0 transition-transform duration-700" />
                   </Link>
                   
                   <div className="hidden sm:flex items-center gap-4 group cursor-pointer">
