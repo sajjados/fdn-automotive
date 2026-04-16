@@ -99,11 +99,11 @@ export default function Home() {
       </section>
 
       {/* Marquee Logos - Refined Editorial Style */}
-      <section className="py-8 lg:py-12 bg-brand-black border-y border-white/5 overflow-hidden relative">
+      <section className="py-4 lg:py-6 bg-brand-black border-y border-white/5 overflow-hidden relative">
         <div className="absolute inset-y-0 left-0 w-48 bg-gradient-to-r from-brand-black to-transparent z-10" />
         <div className="absolute inset-y-0 right-0 w-48 bg-gradient-to-l from-brand-black to-transparent z-10" />
         
-        <div className="flex gap-40 animate-marquee whitespace-nowrap items-center py-4">
+        <div className="flex gap-40 animate-marquee whitespace-nowrap items-center py-2">
           {[
             { name: 'Lamborghini', logo: lamboLogo },
             { name: 'Porsche', logo: porscheLogo },
@@ -199,13 +199,6 @@ export default function Home() {
                     <span className="text-brand-red font-black text-[10px] uppercase tracking-[0.4em] opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500">
                       {car.category}
                     </span>
-                    {BRAND_LOGOS.find(b => b.name === car.brand) && (
-                      <img 
-                        src={BRAND_LOGOS.find(b => b.name === car.brand)?.logo} 
-                        alt={car.brand}
-                        className="h-6 w-auto object-contain opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500"
-                      />
-                    )}
                   </div>
                   <h3 className="text-4xl font-black uppercase tracking-tighter mb-2 z-10 relative">
                     {car.brand} <br />

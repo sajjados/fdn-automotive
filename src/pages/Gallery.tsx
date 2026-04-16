@@ -62,7 +62,7 @@ export default function Gallery() {
         </div>
 
         {/* Brand Marquee for Gallery - Refined Editorial Style */}
-        <div className="mb-20 py-16 border-y border-white/5 overflow-hidden relative group">
+        <div className="mb-12 py-4 lg:py-6 border-y border-white/5 overflow-hidden relative group">
           <div className="absolute inset-y-0 left-0 w-48 bg-gradient-to-r from-brand-black to-transparent z-10" />
           <div className="absolute inset-y-0 right-0 w-48 bg-gradient-to-l from-brand-black to-transparent z-10" />
           
