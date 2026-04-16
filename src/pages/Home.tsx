@@ -144,7 +144,7 @@ export default function Home() {
                 <img 
                   src={brand.logo} 
                   alt={brand.name} 
-                  className="h-10 lg:h-12 w-auto object-contain opacity-100 group-hover:scale-110 transition-transform duration-700" 
+                  className="h-8 lg:h-10 w-auto object-contain opacity-100 group-hover:scale-110 transition-transform duration-700" 
                   referrerPolicy="no-referrer" 
                 />
               </div>
@@ -190,27 +190,28 @@ export default function Home() {
                 <img
                   src={car.images[0]}
                   alt={car.model}
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 group-hover:opacity-40"
+                  className="w-full h-full object-cover transition-transform duration-1000 lg:group-hover:scale-110"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 p-12 flex flex-col justify-end translate-y-10 group-hover:translate-y-0 transition-transform duration-700">
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-black/90 via-brand-black/30 to-transparent opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-700" />
+                <div className="absolute inset-0 p-8 md:p-12 flex flex-col justify-end translate-y-0 lg:translate-y-10 lg:group-hover:translate-y-0 transition-transform duration-700">
                   <div className="flex items-center gap-4 mb-4">
-                    <span className="text-brand-red font-black text-[10px] uppercase tracking-[0.4em] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <span className="text-brand-red font-black text-[10px] uppercase tracking-[0.4em] opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500">
                       {car.category}
                     </span>
                     {BRAND_LOGOS.find(b => b.name === car.brand) && (
                       <img 
                         src={BRAND_LOGOS.find(b => b.name === car.brand)?.logo} 
                         alt={car.brand}
-                        className="h-6 w-auto object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                        className="h-6 w-auto object-contain opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500"
                       />
                     )}
                   </div>
-                  <h3 className="text-4xl font-black uppercase tracking-tighter mb-2">
+                  <h3 className="text-4xl font-black uppercase tracking-tighter mb-2 z-10 relative">
                     {car.brand} <br />
                     <span className="text-luxury italic font-normal lowercase">{car.model}</span>
                   </h3>
-                  <div className="flex items-center gap-6 mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-100">
+                  <div className="flex items-center gap-6 mt-6 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-700 lg:delay-100 z-10 relative">
                     <div className="flex flex-col">
                       <span className="text-[8px] uppercase tracking-widest text-white/40">Güç</span>
                       <span className="text-xs font-bold">{car.power}</span>

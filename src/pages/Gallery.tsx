@@ -73,11 +73,11 @@ export default function Gallery() {
                   <img 
                     src={brand.logo} 
                     alt={brand.name} 
-                    className="h-7 lg:h-9 w-auto object-contain opacity-10 group-hover:opacity-100 transition-all duration-1000 grayscale invert brightness-200" 
+                    className="h-7 lg:h-9 w-auto object-contain opacity-60 group-hover:opacity-100 grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-110" 
                     referrerPolicy="no-referrer"
                   />
                 </div>
-                <span className="text-[9px] uppercase tracking-[0.8em] text-white/5 group-hover:text-white transition-all duration-1000 font-black">{brand.name}</span>
+                <span className="text-[9px] uppercase tracking-[0.8em] text-white/60 group-hover:text-white transition-all duration-1000 font-black">{brand.name}</span>
               </div>
             ))}
           </div>
