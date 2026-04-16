@@ -17,7 +17,7 @@ export default function Gallery() {
       <div className="noise-overlay" />
       
       <div className="max-w-[1800px] mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-12">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-12">
           <div className="max-w-2xl">
             <span className="text-brand-red font-black uppercase tracking-[0.5em] text-[10px] mb-6 block">
               Kasa
